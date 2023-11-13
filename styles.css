@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: hsl(234, 17%, 12%);
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+}
+
+#main h4 {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.timer h1 {
+    width: 7.5%;
+    min-width: 125px;
+    color: hsl(345, 95%, 68%);
+    margin: 0 15px;
+    border-radius: 7.5px;
+    padding: 15px 0;
+    font-size: 4rem;
+    text-align: center;
+    background-color: hwb(236 20% 69%);
+}
+
+.card {
+    text-align: center;
+}
+
+.card p {
+    color: hsl(237, 18%, 59%);
+    font-size: 0.75em;
+    margin-top: 20px;
+    letter-spacing: 2.5px;
+}
+
+@media screen and (max-width: 625px) {
+    #main h4 {
+        font-size: larger;
+    }
+
+    .timer h1 {
+        font-size: 2.5rem;
+        padding: 17.5px 0;
+        width: 5%;
+        min-width: 90px;
+    }
+}
+
+.hills {
+    min-width: 1470px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .hills {
+        left: -165%;
+    }
+}
+
+#socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 7.5%;
+}
+
+#socials svg {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#socials svg:hover path {
+    fill: hsl(345, 95%, 68%);
+}
+
+.attribution {
+    background-color: #2F2439;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+}
+
+.attribution p a {
+    color: hsl(345, 95%, 68%);
+}
+
